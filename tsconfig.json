@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017", //компилируем в es6, можно использовать es5 для старых версий нода
+    "module": "commonjs", //импорт модулей преобразуется в commonjs (node require)
+    "sourceMap": true, //генерировать sourceMaps, нужно для отладки
+    "esModuleInterop": true,
+    "removeComments": true, // Удаляет все комментарии из файлов TypeScript при преобразовании в JavaScript.
+    "noImplicitAny": true, // Если тип не описан то он any
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node", // Это помогает компилятору понять, на что ссылается импорт. Узел значения имитирует механизм разрешения модуля Node.
+    "rootDir": "src",
+    "outDir": "build",
+    // Это нужно, чтобы TypeScript не жаловался на использование декораторов.
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "lib": ["es2015", "eslint.asynciterable"],
+  "include": ["src/**/*"], //указывает что включаться должны только файлы из папки /src
+  "exclude": ["node_modules"] //указывает что должны исключать
+}

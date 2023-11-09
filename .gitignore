@@ -1,0 +1,22 @@
+# OSX
+#
+.DS_Store
+
+#VSCode
+.vscode/
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+# *.keystore
+!debug.keystore
+
+# ESLint
+.eslintcache
+
